@@ -20,10 +20,6 @@ app.use(express.json());
 
 app.use("/api/products", require("./routes/productRoutes"));
 
-app.get("/", (req, res) => {
-  res.send("Backend Running");
-});
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
